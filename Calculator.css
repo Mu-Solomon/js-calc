@@ -1,0 +1,242 @@
+body {
+    /*background: rgba(95, 95, 95, 0.226);*/
+    /*background-image: url(bgImg.jpg);*/
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
+    box-sizing: border-box;
+    text-align: center;
+    transition: 1s;
+}
+#calculator {
+    text-align:center;
+    background: white;
+    width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 8vh;
+    height: 500px;
+    margin-bottom:  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: ;
+    box-shadow: 1px 15px 15px 0 rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width:300px) and (max-width:600px) {
+    #calculator {
+        width: 95%;
+        height: 75vh;
+    }
+
+    #numbers {
+        width: 100%;
+        margin: auto !important;
+        display: flex !important;
+        justify-content: center;
+        margin-top: 50px !important;
+    }
+    
+    #numbers button{
+        font-size: 16px;
+    }
+
+    #number,#symbol,#clear,#empty {
+        padding: 18px !important;
+        margin: 2px !important;
+        margin-left: 0 !important;
+        width:65px !important;
+    }
+
+    #number:nth-child(16) {
+        width: 130px !important;
+    }
+
+    #input {
+        background: ;
+        padding-top:1px  !important;
+        height: 90px !important;
+        margin-bottom: -10px !important;
+    }
+    #input p {
+        font-size: 22px !important;
+    }
+
+    #answer {
+        height: 160px !important;
+        margin-top: -20px !important;
+    }
+    #answer p{
+        font-size: 27px !important;
+        font-weight: 600 !important;
+    }
+}
+#numbers {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: ;
+    margin-left: 40px;
+    margin-top:100px ;
+    padding-bottom: ;
+    background-color: ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#clear:hover {
+    cursor: no-drop;
+}
+#number,#symbol,#clear,#empty {
+    padding: 22px;
+    margin: 3px;
+    outline: none;
+    border: none;
+   /* margin: auto;*/
+    text-align: center;
+    font-size: 17px;
+    width:75px;
+    background: rgba(252, 248, 248, 0.596);
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#number,#symbol,#empty:hover {
+    cursor:pointer;
+    
+}
+
+#number:hover{
+    background: #eeebeb;
+}
+
+#number:active {
+    font-size: 10px;
+}
+
+#symbol:hover {
+    opacity:0.8;
+}
+
+#empty:hover {
+    background: #eeebeb;
+
+}
+#number:nth-child(16):hover {
+    opacity: 0.8;
+
+}
+
+#number:nth-child(16) {
+    background: #9477af;
+    order: 1;
+    border-radius: 50px;
+    width: 157px ;
+    font-size: 17px;
+}
+
+#symbol:nth-child(4) {
+    background: #20b2aa;
+    order: 1;
+}
+
+#symbol:nth-child(13) {
+    background: #20b2aa;
+
+}
+
+#symbol:nth-child(4) {
+    background: #ffa500;
+    color:white;
+    
+}
+
+#symbol:nth-child(9) {
+    background: #f08080;
+    color:white;
+    
+}
+
+#symbol:nth-child(2) {
+    background: #7d93e0;
+    color: white;
+    order: 1;
+
+}
+
+#symbol:nth-child(5) {
+    background: #7d93e0;
+}
+
+#empty {
+    order: 1;
+    border-radius: 15px;
+}
+#input,#answer{
+    background:;
+    width: 300px;
+    margin: auto;
+    text-align: right;
+}
+#answer {
+    height: 100px;
+    background: ;
+    margin-bottom:-90px ;
+    margin-top: -;
+}
+
+#answer p {
+    font-size: 40px;
+    font-weight: 500;
+    /*Imargin-bottom: 5px;*/
+    display: inline-flex;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+    font-family: 'Rubik','Sans-serif' !important;*/
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 500;
+    transition: 1s;
+}
+
+#input {
+    height: 30px;
+}
+#input p {
+    font-size: 20px;
+    padding: 5px ;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#label {
+    color: antiquewhite;
+    border-top: 5px dotted rgb(233, 229, 227);
+    border-radius: 5px;
+    font-size: 80%;
+    width: 400px;
+    margin: auto;
+    margin-top: 12px ;
+    text-shadow: 11px black;
+    font-family:raleway;
+}
+
+#label:first-letter{
+    font-family: serif;
+    font-size: 20px;
+    color: rgb(223, 220, 219);
+}
+
+#label a {
+    text-decoration: none;
+    color: rgba(68, 58, 58, 0.89);
+    font-weight: bold;
+}
+#label a:hover {
+    color: rgb(37, 150, 170);
+}
+.allClear {
+    background: rgba(206, 46, 46, 0.842) !important;
+    color: wheat;
+}
+.allClear:hover {
+    background: rgb(206, 46, 46) !important;
+    border-radius: 10% !important;
+}
