@@ -1,3 +1,3 @@
 # First Vanilla javascript
-![Live site here]()
+- Hosted-link [here](https://solomon-calc.netlify.app/)
 - Author [Mu-Solomon](mailto:musolomoni@gmail.com)

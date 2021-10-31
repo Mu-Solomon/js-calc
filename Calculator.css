@@ -70,6 +70,9 @@ body {
         font-size: 27px !important;
         font-weight: 600 !important;
     }
+    #label {
+        width: 320px !important;
+    }
 }
 #numbers {
     display: flex;
